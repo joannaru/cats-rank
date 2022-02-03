@@ -1,0 +1,18 @@
+@import 'variables';
+
+// THEMING BOOTSTRAP
+$theme-colors: ("danger": $color-red,
+  "success":$color-green,
+  "dark":$color-darkgreen,
+  "primary":$color-green,
+  "champagne":$color-champagne,
+  "light":#fff,
+  "warning":$color-lightred);
+
+
+.btn:focus {
+  outline: none;
+}
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";

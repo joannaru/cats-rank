@@ -1,0 +1,102 @@
+<header>
+  <app-menu [active]="active"></app-menu>
+
+  <div class="navbar navbar-dark bg-dark shadow-sm" #topNavbar>
+    <div class="container">
+      <a routerLink="" class="navbar-brand d-flex align-items-center">
+        <i class="fas fa-cat me-3"></i>
+        <strong>HTTP Cats</strong>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto me-5">
+        <a
+          routerLink="/cats"
+          routerLinkActive="text-warning"
+          class="me-3 py-2 link-light text-decoration-none"
+          >Cats</a
+        >
+        <a
+          routerLink="/about"
+          routerLinkActive="text-warning"
+          class="me-3 py-2 link-light text-decoration-none"
+          >About</a
+        >
+      </nav>
+      <button
+        (click)="showMenu()"
+        type="button"
+        class="btn text-white shadow-none"
+        aria-expanded="false"
+        aria-label="Show/Hide"
+      >
+        <i *ngIf="active" class="fa fa-chevron-circle-up fa-2x"></i>
+        <i *ngIf="!active" class="fa fa-chevron-circle-down fa-2x"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="py-5 container">
+    <router-outlet></router-outlet>
+  </section>
+</main>
+
+<footer class="pt-4 pt-md-5 border-top">
+  <div class="container">
+    <p class="float-end mb-1">
+      <button type="button" class="btn btn-link">
+        <a class="link-success" (click)="scrollToTheTop(topNavbar)"
+          >Back to top</a
+        >
+      </button>
+    </p>
+
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">Joanna Rudak</small>
+      </div>
+      <div class="col-6 col-md">
+        <p class="h5">REST Api</p>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a
+              class="text-muted"
+              href="https://github.com/typicode/json-server"
+              target="_blank"
+              >JSON Server</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <p class="h5">Platform</p>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="https://angular.io/" target="_blank"
+              >Angular</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <p class="h5">Stylesheets</p>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="https://sass-lang.com/" target="_blank"
+              >SCSS</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted"
+              href="https://getbootstrap.com/"
+              target="_blank"
+              >Bootstrap</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

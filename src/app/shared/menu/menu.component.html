@@ -1,0 +1,52 @@
+<div class="bg-dark menu" [@openClose]="active ? 'open' : 'closed'">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-sm-8 col-md-7 py-4 bg-dark">
+        <h4>About</h4>
+        <p>
+          This app counts votes casted for cats and saves it on local JSON
+          server.
+        </p>
+        <!-- <ol class="lead text-left text-muted fs-6">
+          <li>
+            1xx - Informational: The server has received the request and is
+            continuing the process
+          </li>
+          <li>
+            2xx - Successful: The request was successful and the browser has
+            received the expected information
+          </li>
+          <li>
+            3xx (Redirection): You have been redirected and the completion of
+            the request requires further action
+          </li>
+          <li>
+            4xx (Client Error): The website or the page could not be reached,
+            either the page is unavailable or the request contains bad syntax
+          </li>
+          <li>
+            5xx (Server Error): While the request appears to be valid, the
+            server could not complete the request
+          </li>
+        </ol> -->
+      </div>
+
+      <div class="col-sm-4 offset-md-1 py-4 bg-dark">
+        <h4 class="text-white">More</h4>
+        <ul class="list-unstyled">
+          <li>
+            <a routerLink="/about" class="text-white">About</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/typicode/json-server"
+              target="_blank"
+              class="text-white"
+              >JSON server</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

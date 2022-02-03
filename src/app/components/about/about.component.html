@@ -1,0 +1,65 @@
+<h1>The aim of this application</h1>
+<p>
+  This app uses Observable type to handle asynchrous data, counts casted votes
+  and saves it on <a class="link-success">JSON server</a> using HTTP request.
+</p>
+
+<h2>Functionalities:</h2>
+<ul>
+  <li>Dynamic list displaying with scrolling into newly loaded elements</li>
+  <li>Correct sorting of the list after changing votes</li>
+  <li>Saving data on JSON server</li>
+  <li>Animating Navbar</li>
+</ul>
+<h3>The following Angular Platform features was used:</h3>
+<ul>
+  <li>
+    Service with @Injectable() decorator to handle data hosted independently and
+    share it across components
+  </li>
+  <li>Asynchrous methods of HttpClient to fetch data from JSON Server</li>
+  <li>
+    @Input decorator in Child Component to recieve data from Parent Component
+  </li>
+  <li>
+    @Output decorator in Child Component to emit data for Parent Component
+  </li>
+  <li>
+    @ViewChildren decorator in order to get QueryList of elements from the view
+    DOM
+  </li>
+  <li>Angular's animation system to animate navbar</li>
+  <li>Router Module for links handling</li>
+</ul>
+
+<h3>RxJS library was applied for reactive programming</h3>
+<ul>
+  <li>Observable type has allowed to operate on asynchrous seqence of data</li>
+</ul>
+
+<h3>JSON Server library</h3>
+<ul>
+  <li>demo REST JSON service was created within this library</li>
+</ul>
+
+<h3>Site is <b>WCAG AA compliant</b>, checked with following tools:</h3>
+<ul>
+  <ul>
+    <li>
+      <a
+        class="link-success"
+        href="https://webaim.org/resources/contrastchecker/"
+        >WebAIM</a
+      >
+      Contrast checker
+    </li>
+
+    <li>
+      <a
+        class="link-success"
+        href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=pl"
+        >Wave Evaluation Tool</a
+      >
+    </li>
+  </ul>
+</ul>

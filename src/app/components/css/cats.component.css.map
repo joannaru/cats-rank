@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../cats/cats.component.scss"
+    ],
+    "names": [],
+    "file": "cats.component.css"
+}
