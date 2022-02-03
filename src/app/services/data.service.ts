@@ -8,9 +8,11 @@ import { Cat } from '../models/cat';
   providedIn: 'root'
 })
 export class DataService {
-
-  urlCats = "http://localhost:3000/cats"
-  urlCategories = "http://localhost:3000/categories"
+  urlProd = "https://my-json-server.typicode.com/joannaru/cats-rank-db"
+  urlDev = "https://localhost:3000"
+  urlMain = urlProd
+  urlCats = urlMain+"/cats"
+  urlCategories = urlMain+"/categories"
 
   constructor(private http: HttpClient) { }
 
