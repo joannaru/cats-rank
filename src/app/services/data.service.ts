@@ -10,9 +10,9 @@ import { Cat } from '../models/cat';
 export class DataService {
   urlProd = "https://my-json-server.typicode.com/joannaru/cats-rank-db"
   urlDev = "https://localhost:3000"
-  urlMain = urlProd
-  urlCats = urlMain+"/cats"
-  urlCategories = urlMain+"/categories"
+  urlMain = this.urlProd
+  urlCats = this.urlMain+"/cats"
+  urlCategories = this.urlMain+"/categories"
 
   constructor(private http: HttpClient) { }
 
