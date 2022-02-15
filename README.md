@@ -1,27 +1,39 @@
-# CatsJsonDatabase
+# Demo link 
+
+https://joannaru.github.io/cats-rank/cats
+
+# CatsRank
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
-## Development server
+This app uses **Observable** type to handle **asynchrous data**, counts casted votes and saves it on  JSON server  using HTTP request.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Functionalities:
 
-## Code scaffolding
+-   Dynamic list displaying with scrolling into newly loaded elements
+-   Correct sorting of the list after changing votes
+-   Saving data on JSON server
+-   Animating Navbar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### The following Angular Platform features was used:
 
-## Build
+-   **Service** with @Injectable() decorator to handle data hosted independently and share it across components
+-   **Asynchrous methods of HttpClient** to fetch data from JSON Server
+-   **@Input** decorator in Child Component to recieve data from Parent Component
+-   **@Output** decorator in Child Component to emit data for Parent Component
+-   **@ViewChildren** decorator in order to get QueryList of elements from the view DOM
+-   Angular's animation system to animate navbar
+-   Router Module for links handling
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### RxJS library was applied for reactive programming
 
-## Running unit tests
+-   Observable type has allowed to operate on asynchrous seqence of data
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### JSON Server library
 
-## Running end-to-end tests
+-   demo REST JSON service was created within this library
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Site is  **WCAG AA compliant**, checked with following tools:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+-   [WebAIM](https://webaim.org/resources/contrastchecker/)  Contrast checker
+-   [Wave Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=pl)
